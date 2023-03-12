@@ -1,0 +1,42 @@
+<div class="geral">
+  <div class="cabecalho-lista">
+    <h1>Sua lista de Livros</h1>
+  </div>
+
+  <div></div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Status</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let livro of listaLivros; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>
+          {{ livro.nome }}
+        </td>
+
+        <td (click)="completar(livro.id)">
+          <i *ngIf="livro.concluido" class="material-icons done">done</i>
+        </td>
+        <td>
+          <i (click)="deletarLivro(livro.id)" class="material-icons deletar"
+            >delete</i
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <form>
+      <input type="text" placeholder="informe um novo livro" #inputLivro />
+      <button (click)="adicionarLivro(inputLivro.value)">Adicionar</button>
+    </form>
+  </div>
+</div>

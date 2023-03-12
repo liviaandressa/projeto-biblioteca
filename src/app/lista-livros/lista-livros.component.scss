@@ -1,0 +1,55 @@
+.cabecalho-lista{
+  font-size: 8px;
+  font-family: 'Poppins', sans-serif;
+
+background-color: #9DEB5E;
+  //margin: 0px 100px 20px 100px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+
+
+input{
+  height: 25px;
+  width: 220px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+button{
+  height: 32px;
+  width: 90px;
+  background-color:#9DEB5E;
+  border: none;
+  border-radius: 5px;
+}
+
+.deletar{
+  color: rgb(184, 1, 1);
+}
+
+.done{
+color: green;
+}
+
+table, tr, td, th{
+  border:rgb(223, 211, 211) solid 1px;
+
+  width:600px;
+  padding:4px;
+  font-size:15px;
+  font-family: 'Poppins', sans-serif;
+  border-collapse: collapse;
+  align-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+
+
+}
+
+th{
+  background-color: rgba(180, 122, 180, 0.39);
+}
+
